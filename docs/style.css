@@ -3,60 +3,148 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
+
 html, body { /* this is needed for the containers to be able to resize in percentage as they need a parent */
     margin: auto;
     padding: 0; 
+    background-image: url("Black.png");
+    background-size: 100%;
     width: 100%; 
     height: 100%;
 }
+
 .container {
     width: 100%;
     height: 100%;
-    background-image: url("Map.png");
     text-align: center;
 }
-.menu {
-    background-color: rgba(100, 100, 100, 0.95);
-}
+
 .menu ul {
+    position: relative;
     display: inline-flex;
     margin: auto;
 }
+
 .menu ul li {
     list-style: none;
     margin-left: -20%;
     width: 40%;
+    
     height: auto;
 }
+
 .menu ul li a{
     color: rgb(155, 155, 155);
     cursor: pointer;
-    text-decoration: none;
     font-size: x-large;
+    text-decoration: none;
+    padding: 3px;
+    position: relative;
 }
+
+.menu ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 250ms ease-in;
+}
+
+.menu ul li a:hover::after{
+    transform: scaleX(1);
+}
+
 .logo img {
     width: 60%;
     margin-top: 5%;
     margin-left: -150%;
     cursor: pointer;
 }
+
 .active {
     color: rgb(192, 192, 192) !important;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
 }
+
 .banner {
     margin: auto;
-    height: 80%;
-    width: 40%;
+    height: 100%;
+    width: 100%;
     background-color: rgba(150, 150, 150, 0.7);
 }
+
+.bannerimage {
+    position: relative;
+    align-self: center;
+    /* margin-left: -100%; */
+    width: 100%;
+
+}
+
 .main-text {
     color: rgb(100, 140, 140);
 }
+
 .main-text h1 {
     font-size: x-large;
+    margin-top: 1%;
     color: rgb(30, 30, 30);
 }
+
 .main-text a {
     font-size: large;
-    color: rgb(80, 80, 80);
+    color: rgb(60, 60, 60);
 }
+
+.select ul {
+    position: relative;
+    display: inline-flex;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.select ul li {
+    list-style: none;
+    height: auto;
+}
+
+.select ul li a{
+    color: rgb(150, 150, 150);
+    text-decoration: none;
+    padding: 3px;
+    position: relative;
+}
+
+.listtitle {
+    text-align: center;
+}
+
+.flower {
+    position: relative;
+    width: 200px;
+}
+
+.biglogo {
+    position: relative;
+    width: 200px;
+}
+
+
+.map{
+    margin-top: 2%;
+    color: white;
+    background-color: black;
+}
+
+.map img{
+    position: relative;
+    width: 50%;
+    border: 5px;
+    border-style: ridge;
+}
+

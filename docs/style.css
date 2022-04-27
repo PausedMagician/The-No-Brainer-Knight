@@ -45,6 +45,9 @@ html, body { /* this is needed for the containers to be able to resize in percen
 }
 .banner {
     margin: auto;
+    height: 80%;
+    width: 40%;
+    background-color: rgba(150, 150, 150, 0.7);
 }
 .main-text {
     color: rgb(100, 140, 140);

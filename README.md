@@ -1,17 +1,5 @@
 # The No-Brainer Knight
-
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
-<div class="main">
-    <a>hi</a>
-</div>
-
+<a>The No-Brainer Knight, is an rpg that is supposed to be somewhat simple, therefore No-Brainer</a>
 # Website
+<a href="https://pausedmagician.github.io/The-No-Brainer-Knight/">Main Page</a>
 
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
-<div class="main">
-    <a href="https://pausedmagician.github.io/The-No-Brainer-Knight/">Main Page</a>
-</div>

@@ -1,4 +1,4 @@
 # The No-Brainer Knight
 
 # Website
-https://pausedmagician.github.io/The-No-Brainer-Knight/
+<a href="https://pausedmagician.github.io/The-No-Brainer-Knight/">Main Page</a>

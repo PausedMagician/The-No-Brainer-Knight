@@ -1,10 +1,10 @@
 *{
-    margin: 0;
+    margin: auto;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
 html, body { /* this is needed for the containers to be able to resize in percentage as they need a parent */
-    margin: 0; 
+    margin: auto;
     padding: 0; 
     width: 100%; 
     height: 100%;
@@ -12,30 +12,48 @@ html, body { /* this is needed for the containers to be able to resize in percen
 .container {
     width: 100%;
     height: 100%;
-    background-color: lightgray;
+    background-image: url("Map.png");
+    text-align: center;
+}
+.menu {
+    background-color: rgba(100, 100, 100, 0.95);
 }
 .menu ul {
     display: inline-flex;
-    margin: 50px;
+    margin: auto;
 }
 .menu ul li {
     list-style: none;
-    width: 30%;
-    color: darkgrey;
+    margin-left: -20%;
+    width: 40%;
+    height: auto;
+}
+.menu ul li a{
+    color: rgb(155, 155, 155);
     cursor: pointer;
+    text-decoration: none;
+    font-size: x-large;
 }
 .logo img {
-    width: 50px;
-    margin-top: -18px;
-    margin-right: 60px;
+    width: 60%;
+    margin-top: 5%;
+    margin-left: -150%;
+    cursor: pointer;
 }
 .active {
-    color: grey !important;
+    color: rgb(192, 192, 192) !important;
 }
 .banner {
-    margin-left: 5%;
-    margin-top: 2%
+    margin: auto;
 }
 .main-text {
     color: rgb(100, 140, 140);
+}
+.main-text h1 {
+    font-size: x-large;
+    color: rgb(30, 30, 30);
+}
+.main-text a {
+    font-size: large;
+    color: rgb(80, 80, 80);
 }

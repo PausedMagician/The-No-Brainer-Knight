@@ -4,13 +4,23 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-html, body { /* this is needed for the containers to be able to resize in percentage as they need a parent */
-    margin: auto;
-    padding: 0; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0),rgb(30, 30, 30)),url(banner.png);
-    background-size: 100%;
-    width: 100%; 
+html {
+
     height: 100%;
+    background-color: rgb(252, 251, 251);
+
+}
+
+
+
+html, body, map { /* this is needed for the containers to be able to resize in percentage as they need a parent */
+    margin: 0;
+    padding: 0; 
+    background-image: linear-gradient(rgba(36, 35, 35, 0),rgb(0, 0, 0),rgb(0, 0, 0)),url(banner.png);
+    
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 .container {
@@ -71,12 +81,7 @@ html, body { /* this is needed for the containers to be able to resize in percen
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
 }
 
-.banner {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    /* background-color: rgba(150, 150, 150, 0.7); */
-}
+
 
 .bannerimage {
     position: relative;
@@ -134,12 +139,11 @@ html, body { /* this is needed for the containers to be able to resize in percen
     width: 200px;
 }
 
+.map {
 
-.map{
-    margin-top: 2%;
-    color: white;
-    background-color: black;
+    background-color: rgb(93, 91, 91);
 }
+
 
 .map img{
     position: relative;
@@ -147,4 +151,5 @@ html, body { /* this is needed for the containers to be able to resize in percen
     border: 5px;
     border-style: ridge;
 }
+
 

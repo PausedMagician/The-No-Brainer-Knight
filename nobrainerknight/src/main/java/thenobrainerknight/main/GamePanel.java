@@ -114,12 +114,12 @@ public class GamePanel extends JPanel implements Runnable {
 
         g2.drawString("FPS: " + String.valueOf(actualFPS), 10, 50);
 
-        makefancy(10, 50, 50, 100, 10, 10, g);
+        makefancy(10, 50, 50, 100, 25, 10, g);
 
         g2.dispose();
     }
 
-    public void makefancy(int x, int y, int xwidth, int ywidth, int input1, int input2, Graphics g) {
+    public void makefancy(int x, int y, int xwidth, int ywidth, int input1, int amount, Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
         int max = 3600;
         int min = 1;
@@ -146,7 +146,7 @@ public class GamePanel extends JPanel implements Runnable {
         } else if (reverse2 == false) {
             randcoords2 += 1 + Math.floor(randcoords2 / 250);
         }
-        for (int i = 1; i < input2; i++) {
+        for (int i = 1; i < amount; i++) {
             g2.drawArc(x + i * i, y + i * i, xwidth + i * i, ywidth + i * i, randcoords + i * i, randcoords2 + i * i);
         }
     }

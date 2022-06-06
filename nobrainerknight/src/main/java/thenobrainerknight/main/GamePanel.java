@@ -6,6 +6,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.lang.Math;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class GamePanel extends JPanel implements Runnable {
@@ -31,10 +32,13 @@ public class GamePanel extends JPanel implements Runnable {
 
     Thread gameThread;
 
+    JButton Test1buttt = new JButton("Main Menu");
+
     public GamePanel() {
-        this.setPreferredSize(new Dimension(screenWidth, screenHeight));
-        this.setBackground(Color.gray);
-        this.setDoubleBuffered(true);
+        setPreferredSize(new Dimension(screenWidth, screenHeight));
+        setBackground(Color.gray);
+        setDoubleBuffered(true);
+        add(Test1buttt);
     }
 
     public void startGameThread() {
@@ -42,32 +46,6 @@ public class GamePanel extends JPanel implements Runnable {
         gameThread.start();
     }
 
-    // @Override
-    // public void run() {
-
-    // double drawInterval = 1000000000 / FPS;
-    // double nextDrawTime = System.nanoTime() + drawInterval;
-
-    // while (gameThread != null) {
-
-    // update();
-    // repaint();
-
-    // try {
-    // double remainingTime = nextDrawTime - System.nanoTime();
-    // remainingTime = remainingTime / 1000000;
-
-    // if (remainingTime < 0) {
-    // remainingTime = 0;
-    // }
-
-    // Thread.sleep((long) remainingTime);
-
-    // nextDrawTime += drawInterval;
-    // } catch (InterruptedException e) {
-    // e.printStackTrace();
-    // }
-    // }
     @Override
     public void run() {
         double drawInterval = 1000000000 / FPS;
